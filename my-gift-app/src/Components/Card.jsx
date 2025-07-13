@@ -112,7 +112,7 @@ const popularGifts = [
   },
 ];
 
-const Card = () => {
+export default function Card({ mode, icon, title, description }) {
   const [favorites, setFavorites] = useState([]);
 
   const toggleFavorite = (id) => {
@@ -120,6 +120,17 @@ const Card = () => {
       prev.includes(id) ? prev.filter((favId) => favId !== id) : [...prev, id]
     );
   };
+
+  if (mode === "category") {
+    return (
+      <div className="category-card preview-card">
+        <div className="card-icon">{icon}</div>
+        <h3 className="card-title">{title}</h3>
+        <p className="card-desc">{description}</p>
+      </div>
+    );
+  }
+
   return (
     <>
       {/* Browse by Category */}
@@ -191,6 +202,4 @@ const Card = () => {
       </div>
     </>
   );
-};
-
-export default Card;
+}
