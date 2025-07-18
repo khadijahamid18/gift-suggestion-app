@@ -1,8 +1,9 @@
-// File: Navbar.jsx
+"use client"; // Required for client-side navigation
 
 import React from "react";
+import Link from "next/link"; // Import Next.js Link for routing
 import "../Styles/Components/Navbar.css"; // Custom CSS file for styling
-import { FaGift, FaSearch, FaHeart, FaUser } from "react-icons/fa"; // Importing icons
+import { FaGift, FaSearch, FaHeart, FaUser } from "react-icons/fa"; // Icons
 
 const Navbar = () => {
   return (
@@ -13,20 +14,25 @@ const Navbar = () => {
         <span>GIFT FINDER</span>
       </div>
 
-      {/* Right: Navigation options with icons */}
+      {/* Right: Navigation options with links and icons */}
       <div className="navbar-options">
-        <div className="nav-item">
+        {/* Gift Search */}
+        <Link href="/Dashboard/Gift-Search" className="nav-item">
           <FaSearch className="nav-icon" />
           <span>Gift Search</span>
-        </div>
-        <div className="nav-item">
+        </Link>
+
+        {/* Favorites */}
+        <Link href="/Dashboard/Favorites" className="nav-item">
           <FaHeart className="nav-icon" />
           <span>Favorites</span>
-        </div>
-        <div className="nav-item">
+        </Link>
+
+        {/* Profile */}
+        <Link href="/Dashboard/Profile" className="nav-item">
           <FaUser className="nav-icon" />
           <span>Profile</span>
-        </div>
+        </Link>
       </div>
     </nav>
   );

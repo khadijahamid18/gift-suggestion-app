@@ -1,4 +1,11 @@
 /* Main layout styling */
+body {
+  margin: 1px;
+  font-family: 'Segoe UI', sans-serif;
+  /* background: linear-gradient(to right, #fa8fbc, #d3a9ff);     */
+  
+}
+
 .dashboard-layout {
   display: flex;
   flex-direction: column;

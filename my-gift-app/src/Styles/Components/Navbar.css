@@ -1,5 +1,11 @@
 /* File: Dashboard.css */
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Navbar container */
 .navbar {
   display: flex;
@@ -35,6 +41,7 @@
 }
 
 /* Each nav item with icon and label */
+/* Ensure links look like nav-items */
 .nav-item {
   display: flex;
   align-items: center;
@@ -44,6 +51,8 @@
   transition: transform 0.2s ease, background 0.3s ease;
   padding: 8px 12px;
   border-radius: 8px;
+  color: white;
+  text-decoration: none; /* Remove underline */
 }
 
 .nav-item:hover {
@@ -51,9 +60,16 @@
   transform: scale(1.05);
 }
 
+/* Optional: Keep icon sizing consistent */
 .nav-icon {
   font-size: 16px;
 }
+
+/* Highlight active nav item (optional, future enhancement)
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+*/
 
 /* Responsive design for mobile */
 @media (max-width: 600px) {

@@ -1,15 +1,12 @@
-import Layout from './Dashboard/layout';
-import Navbar from '../Components/Navbar';
-import Sidebar from '../Components/Sidebar';
-import Card from '../Components/Card';
+// import Page from "./Dashboard/Home/page";
+import Layout from "./Dashboard/Layout/page";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Layout />
-      <Sidebar />
-      <Card />
+      {/* <Page />   */}
+      <Layout/>
+      
     </div>
   );
 }

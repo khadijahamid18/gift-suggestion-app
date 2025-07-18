@@ -16,7 +16,7 @@ import {
   FaHeart,
 } from "react-icons/fa";
 
-const categories = [
+export const categories = [
   {
     icon: <FaLaptop />,
     title: "Electronics",
@@ -52,7 +52,7 @@ const categories = [
 const popularGifts = [
   {
     id: 1,
-    image: "/images/headphones.png",
+    image: "/images/headphones.jpeg",
     category: "Electronics",
     rating: 4.8,
     sold: "2,300 sold",
@@ -62,7 +62,7 @@ const popularGifts = [
   },
   {
     id: 2,
-    image: "/images/lamp.png",
+    image: "/images/chocolate.jpeg",
     category: "Home Decor",
     rating: 4.5,
     sold: "1,100 sold",
@@ -72,7 +72,7 @@ const popularGifts = [
   },
   {
     id: 3,
-    image: "/images/book.png",
+    image: "/images/book.jpeg",
     category: "Books",
     rating: 4.9,
     sold: "3,500 sold",
@@ -82,7 +82,7 @@ const popularGifts = [
   },
   {
     id: 4,
-    image: "/images/necklace.png",
+    image: "/images/necklace.jpeg",
     category: "Jewelry",
     rating: 4.6,
     sold: "900 sold",
@@ -92,7 +92,7 @@ const popularGifts = [
   },
   {
     id: 5,
-    image: "/images/watch.png",
+    image: "/images/watch.jpeg",
     category: "Fashion",
     rating: 4.7,
     sold: "1,400 sold",
@@ -102,7 +102,7 @@ const popularGifts = [
   },
   {
     id: 6,
-    image: "/images/spa.png",
+    image: "/images/flower.jpeg",
     category: "Experiences",
     rating: 5.0,
     sold: "600 sold",

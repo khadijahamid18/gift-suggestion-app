@@ -30,6 +30,6 @@
     "src/app/Gifts.tsx",
     "src/app/[id]/[page].jsx",
     "src/app/[id]/page.jsx"
-  ],
+, "src/app/Dashboard/Cart"  ],
   "exclude": ["node_modules"]
 }
