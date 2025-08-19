@@ -1,34 +1,15 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-
-import "./globals.css";
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import '../styles/globals.css';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Gift Suggestion App",
-  description: "Find the perfect gift for your loved ones with our AI-powered suggestion app.",
+  title: 'GiftGenix - Perfect Gift Suggestions',
+  description: 'Find personalized gift ideas with ease.',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
