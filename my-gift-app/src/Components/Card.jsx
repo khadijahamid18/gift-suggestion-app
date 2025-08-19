@@ -165,7 +165,7 @@ export default function Card({ mode, icon, title, description }) {
             <div key={item.id} className="gift-card">
               {/* Favorite Button */}
               <button
-                className={`fav-btn ${
+                className={`fav-btn${
                   favorites.includes(item.id) ? "favorited" : ""
                 }`}
                 onClick={() => toggleFavorite(item.id)}
