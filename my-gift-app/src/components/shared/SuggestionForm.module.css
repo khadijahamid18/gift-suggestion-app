@@ -1,0 +1,155 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2);
+  background: #fff;
+  padding: calc(var(--spacing-unit) * 3);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 168, 214, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(var(--spacing-unit));
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #b3006f;
+}
+
+.stepCount {
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.progressBar {
+  height: 4px;
+  background: #fdeaf5;
+  border-radius: 2px;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6bb5, #b46bff);
+  border-radius: 2px;
+}
+
+.questionContainer {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit));
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.questionIcon {
+  width: 24px;
+  height: 24px;
+  color: #ff6bb5;
+  background: #fdeaf5;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.question {
+  font-size: 16px;
+  font-weight: 500;
+  color: #b3006f;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.optionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+  background: #fff;
+  border: 1px solid #ffa8d6;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #5a5a5a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-weight: 400;
+}
+
+.optionButton:hover {
+  border-color: #9f15d6;
+  background-color: #ffa4e8;
+  box-shadow: 0 0 0 2px rgba(212, 107, 255, 0.1);
+}
+
+.arrow {
+  font-size: 18px;
+  color: #5a5a5a;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit));
+}
+
+.input {
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
+  border: 1px solid #ffa8d6;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #5a5a5a;
+  transition: all 0.2s ease;
+  background: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d46bff;
+  box-shadow: 0 0 0 2px rgba(212, 107, 255, 0.1);
+}
+
+.input::placeholder {
+  color: #5a5a5a;
+  opacity: 0.7;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.submitButton {
+  background: linear-gradient(90deg, #ff6bb5, #b46bff);
+  color: white;
+  border: none;
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-top: calc(var(--spacing-unit) * 2);
+}
+
+@media (max-width: 480px) {
+  .buttonGrid {
+    grid-template-columns: 1fr;
+  }
+}

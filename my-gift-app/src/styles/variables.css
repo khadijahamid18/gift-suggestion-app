@@ -1,0 +1,12 @@
+:root {
+  --spacing-unit: 8px;
+  --primary-gradient-start: hsl(330, 100%, 71%);
+  --primary-gradient-end: hsl(270, 100%, 73%);
+  --primary-text: hsl(324, 100%, 35%);
+  --secondary-text: hsl(0, 0%, 35%);
+  --light-background: hsl(324, 80%, 96%);
+  --border-color: hsl(330, 80%, 80%);
+  --focus-accent: hsl(280, 100%, 67%);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --hover-shadow: 0 6px 16px rgba(255, 107, 181, 0.3);
+}

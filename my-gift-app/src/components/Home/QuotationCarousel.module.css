@@ -1,0 +1,36 @@
+.carouselContainer {
+  overflow: hidden;
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+.carousel {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 4);
+  min-width: 100%;
+}
+
+.quoteCard {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: calc(var(--spacing-unit) * 2.5);
+  min-width: 300px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quoteText {
+  font-style: italic;
+  font-size: 16px;
+  color: var(--primary-text);
+  margin-bottom: calc(var(--spacing-unit));
+}
+
+.quoteAuthor {
+  font-size: 14px;
+  color: var(--secondary-text);
+}
