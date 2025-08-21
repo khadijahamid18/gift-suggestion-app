@@ -2,8 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './QuotationCarousel.module.css';
-import { AlignCenter } from 'lucide-react';
-
 const QuotationCarousel: React.FC = () => {
   const quotes = [
     { text: "So easy to find the perfect gift!", author: "John S." },
